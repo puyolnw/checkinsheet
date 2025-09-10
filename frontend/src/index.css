@@ -1,6 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* @tailwind directives */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 /* Custom styles */
 @layer base {
@@ -17,15 +18,34 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-500;
+    background-color: #2563eb;
+    color: white;
+  }
+  .btn-primary:hover {
+    background-color: #1d4ed8;
+  }
+  .btn-primary:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
   }
   
   .btn-secondary {
-    @apply bg-gray-600 text-white hover:bg-gray-700 focus:ring-gray-500;
+    background-color: #4b5563;
+    color: white;
+  }
+  .btn-secondary:hover {
+    background-color: #374151;
+  }
+  .btn-secondary:focus {
+    outline: 2px solid #6b7280;
+    outline-offset: 2px;
   }
   
   .card {
-    @apply bg-white border border-gray-200 rounded-lg shadow-md;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   }
   
   /* Thai font utilities */

@@ -10,8 +10,7 @@ const dbConfig = {
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0,
-  acquireTimeout: 60000,
-  reconnect: true
+  // Removed acquireTimeout and reconnect to avoid MySQL2 warnings
 };
 
 // Create connection pool
@@ -21,7 +20,7 @@ const pool = mysql.createPool(dbConfig);
 const testConnection = async () => {
   try {
     const connection = await pool.getConnection();
-    console.log('✅ Database connected successfully');
+    console.log('✅ Database connected');
     connection.release();
     return true;
   } catch (error) {
