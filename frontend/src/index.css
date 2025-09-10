@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+@layer base {
+  html {
+    font-family: 'Bai Jamjuree', 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    background-color: #f9fafb;
+    color: #111827;
+    font-family: 'Bai Jamjuree', 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-500;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-600 text-white hover:bg-gray-700 focus:ring-gray-500;
+  }
+  
+  .card {
+    @apply bg-white border border-gray-200 rounded-lg shadow-md;
+  }
+  
+  /* Thai font utilities */
+  .font-thai {
+    font-family: 'Bai Jamjuree', system-ui, sans-serif;
+  }
+  
+  .text-thai {
+    font-family: 'Bai Jamjuree', system-ui, sans-serif;
+  }
+}

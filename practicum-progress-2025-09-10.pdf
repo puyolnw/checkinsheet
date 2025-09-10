@@ -1,0 +1,56 @@
+{
+  "records": [
+    {
+      "id": 1,
+      "user_id": 3,
+      "student_id": "651234567890",
+      "major": "บรรณารักษ์ศึกษา-ภาษาอังกฤษ",
+      "year_level": 4,
+      "semester": 2,
+      "academic_year": "2567",
+      "gpa": "3.25",
+      "assigned_school_id": null,
+      "assigned_mentor_id": null,
+      "assigned_supervisor_id": null,
+      "practicum_hours_completed": 0,
+      "practicum_hours_required": 50,
+      "status": "in_progress",
+      "created_at": "2025-09-10T16:57:21.000Z",
+      "updated_at": "2025-09-10T16:57:21.000Z",
+      "student_name": "สมหญิง เรียนดี",
+      "school_name": null,
+      "mentor_name": null,
+      "supervisor_name": null,
+      "total_hours": "8.0"
+    },
+    {
+      "id": 2,
+      "user_id": 5,
+      "student_id": "653170010327",
+      "major": "คณิตศาสตร์",
+      "year_level": 4,
+      "semester": 2,
+      "academic_year": "2567",
+      "gpa": "3.80",
+      "assigned_school_id": null,
+      "assigned_mentor_id": null,
+      "assigned_supervisor_id": null,
+      "practicum_hours_completed": 0,
+      "practicum_hours_required": 50,
+      "status": "not_started",
+      "created_at": "2025-09-10T18:41:58.000Z",
+      "updated_at": "2025-09-10T18:41:58.000Z",
+      "student_name": "สมยศ พันทอง",
+      "school_name": null,
+      "mentor_name": null,
+      "supervisor_name": null,
+      "total_hours": "0.0"
+    }
+  ],
+  "pagination": {
+    "page": 1,
+    "limit": 10,
+    "total": 2,
+    "totalPages": 1
+  }
+}
